@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Автоскролл вниз */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+}
+
+/* Стили для своих сообщений */
+.message.sent {
+  background-color: #3b82f6; /* синий */
+  color: white;
+  align-self: flex-end;
+}
+
+/* Стили для чужих сообщений */
+.message.received {
+  background-color: #e5e7eb; /* серый */
+  color: black;
+  align-self: flex-start;
+}
